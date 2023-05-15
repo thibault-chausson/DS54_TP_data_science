@@ -1,0 +1,164 @@
+Return-Path: <ds54-owner@utbm.fr>
+Received: from zimbra.utbm.fr (LHLO zimbra.utbm.fr) (172.23.0.61) by
+ zimbra.utbm.fr with LMTP; Mon, 15 May 2023 11:41:37 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by zimbra.utbm.fr (Postfix) with ESMTP id 1227119007F87
+	for <thibault.chausson@utbm.fr>; Mon, 15 May 2023 11:41:37 +0200 (CEST)
+Authentication-Results: zimbra.utbm.fr (amavisd-new); dkim=pass (1024-bit key)
+	header.d=utbm.fr header.b=IT1yIsU9; dkim=pass (1024-bit key)
+	header.d=utbm.fr header.b=H1zCaPH2
+Received: from zimbra.utbm.fr ([127.0.0.1])
+	by localhost (zimbra.utbm.fr [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id GSGPcwBha3Tb for <thibault.chausson@utbm.fr>;
+	Mon, 15 May 2023 11:41:36 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by zimbra.utbm.fr (Postfix) with ESMTP id 0BD8619007F94
+	for <thibault.chausson@utbm.fr>; Mon, 15 May 2023 11:41:34 +0200 (CEST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zimbra.utbm.fr 0BD8619007F94
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utbm.fr;
+	s=73CF4976-6698-11E3-BE5A-BE842501B475; t=1684143694;
+	bh=azn6VlNzmjsdQG8HVoHzJ61F8zUCYSY/8wjeRPtyjp8=;
+	h=Date:From:To:Message-ID:MIME-Version;
+	b=IT1yIsU90dUTtySBgBNbe6NqxjCjOMK3X5qHPIOe3rWNEdtuoJx3QUL4vqhy7kKaV
+	 dfuehD2asdqJsan4uT0cIx9Rf6u3DFNv8m0WwSIkwqIOcUSP+rbIlXPYHpBiFWNJA1
+	 ncEObIH93D+ArLKvTuZPJod3oROXhjQZMIJrBFwE=
+Received: from zimbra.utbm.fr ([127.0.0.1])
+	by localhost (zimbra.utbm.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id EwsRa9YJgalj for <thibault.chausson@utbm.fr>;
+	Mon, 15 May 2023 11:41:33 +0200 (CEST)
+Received: from smtpinterne.utbm.fr (smtpinterne.utbm.fr [172.23.4.40])
+	by zimbra.utbm.fr (Postfix) with ESMTPS id 452F419007FAD
+	for <tchausso@vers-zimbra.utbm.fr>; Mon, 15 May 2023 11:41:33 +0200 (CEST)
+Received: by smtpinterne.utbm.fr (Postfix)
+	id 153A1609AF; Mon, 15 May 2023 11:41:33 +0200 (CEST)
+Delivered-To: thibault.chausson@utbm.fr
+Received: from vers-liste2.utbm.fr (serv-dsi-365.utbm.fr [172.23.4.19])
+	by smtpinterne.utbm.fr (Postfix) with ESMTP id 0B9AC5EE93;
+	Mon, 15 May 2023 11:41:33 +0200 (CEST)
+Received: by vers-liste2.utbm.fr (Postfix, from userid 998)
+	id 8998D40BCD91; Mon, 15 May 2023 11:38:23 +0200 (CEST)
+X-Original-To: DS54@vers-liste2.utbm.fr
+Delivered-To: DS54@vers-liste2.utbm.fr
+Received: from smtpinterne.utbm.fr (smtpinterne.utbm.fr [172.23.4.40])
+	by vers-liste2.utbm.fr (Postfix) with ESMTP id DB3E340BCD91
+	for <DS54@vers-liste2.utbm.fr>; Mon, 15 May 2023 11:38:19 +0200 (CEST)
+Received: by smtpinterne.utbm.fr (Postfix)
+	id 59E9B5EFD8; Mon, 15 May 2023 11:41:29 +0200 (CEST)
+Delivered-To: ds54@utbm.fr
+Received: from zimbra.utbm.fr (zimbra.utbm.fr [172.23.0.61])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by smtpinterne.utbm.fr (Postfix) with ESMTPS id 5913C5EE93
+	for <DS54@utbm.fr>; Mon, 15 May 2023 11:41:29 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by zimbra.utbm.fr (Postfix) with ESMTP id 4E1D419007B86
+	for <DS54@utbm.fr>; Mon, 15 May 2023 11:41:29 +0200 (CEST)
+Received: from zimbra.utbm.fr ([127.0.0.1])
+	by localhost (zimbra.utbm.fr [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id cXWkqD-IOX1Z for <DS54@utbm.fr>;
+	Mon, 15 May 2023 11:41:29 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by zimbra.utbm.fr (Postfix) with ESMTP id 1435219007F49
+	for <DS54@utbm.fr>; Mon, 15 May 2023 11:41:29 +0200 (CEST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zimbra.utbm.fr 1435219007F49
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utbm.fr;
+	s=73CF4976-6698-11E3-BE5A-BE842501B475; t=1684143689;
+	bh=azn6VlNzmjsdQG8HVoHzJ61F8zUCYSY/8wjeRPtyjp8=;
+	h=Date:From:To:Message-ID:MIME-Version;
+	b=H1zCaPH2tqVqyHgk73K8Q/0AJRWveAdqso5NCgew4BcKYce43EUOwhnYmhViAl9Uw
+	 tDDH46pHtkRldQyUcMlY3rlt2cvdwvFivWc2P6t1MJqK5cR19XVyXlvZ8C/mrVLabI
+	 cuv6xBmTSrShRwFLCvbRHugagDFxLc2g0I+mRpfo=
+Received: from zimbra.utbm.fr ([127.0.0.1])
+	by localhost (zimbra.utbm.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id hxUSD4ySOu5V for <DS54@utbm.fr>;
+	Mon, 15 May 2023 11:41:28 +0200 (CEST)
+Received: from zimbra.utbm.fr (zimbra.utbm.fr [172.23.0.61])
+	by zimbra.utbm.fr (Postfix) with ESMTP id E1B2819007B86
+	for <DS54@utbm.fr>; Mon, 15 May 2023 11:41:28 +0200 (CEST)
+Date: Mon, 15 May 2023 11:41:28 +0200 (CEST)
+From: Jaafar Gaber <jaafar.gaber@utbm.fr>
+To: DS54 <DS54@utbm.fr>
+Message-ID: <1441682497.50647856.1684143688864.JavaMail.zimbra@utbm.fr>
+In-Reply-To: <1091484060.50644146.1684143632070.JavaMail.zimbra@utbm.fr>
+References: <1091484060.50644146.1684143632070.JavaMail.zimbra@utbm.fr>
+Subject: Rappel - Recall
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="=_4fa37d8d-f2d5-41bd-8226-106e92ffb1b4"
+X-Originating-IP: [172.23.51.106]
+X-Mailer: Zimbra 8.8.15_GA_4484 (ZimbraWebClient - GC112 (Win)/8.8.15_GA_4481)
+Thread-Topic: Rappel - Recall
+Thread-Index: zqt4GaghwWRP86D6NKi6gHLczu9a4lojXNOZ
+Reply-To: Jaafar Gaber <jaafar.gaber@utbm.fr>
+X-Loop: ds54@utbm.fr
+X-Sequence: 4
+Errors-To: ds54-owner@utbm.fr
+Precedence: list
+Precedence: bulk
+Sender: ds54-request@utbm.fr
+X-no-archive: yes
+List-Id: <ds54.utbm.fr>
+List-Help: <mailto:sympa@utbm.fr?subject=help>
+List-Subscribe: <mailto:sympa@utbm.fr?subject=subscribe%20ds54>
+List-Unsubscribe: <mailto:sympa@utbm.fr?subject=unsubscribe%20ds54>
+List-Post: <mailto:ds54@utbm.fr>
+List-Owner: <mailto:ds54-request@utbm.fr>
+List-Archive: <https://sympa.utbm.fr/sympa/arc/ds54>
+Archived-At: <https://sympa.utbm.fr/sympa/arcsearch_id/ds54/2023-05/1441682497.50647856.1684143688864.JavaMail.zimbra%40utbm.fr>
+
+--=_4fa37d8d-f2d5-41bd-8226-106e92ffb1b4
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+@2pm=20
+=C3=A0 14:00=20
+
+Chers =C3=A9tudiants,=20
+Le QCM aura lieu en salle B405 et B409. Si vous ne pouvez pas vous connecte=
+r sur moodle=20
+depuis votre machine, vous pourrez le faire depuis un poste. L'=C3=A9preuve=
+ dure 35 minutes.=20
+Sauf excuse motiv=C3=A9e, vous devez =C3=AAtre pr=C3=A9sent : un code vous =
+sera communiqu=C3=A9 en salle.=20
+Les absents excus=C3=A9s recevront le code par mail un peu avant le d=C3=A9=
+but de l'=C3=A9preuve.=20
+Bon week-end,=20
+Serge=20
+
+Dear students,=20
+The multiple-choice quiz will take place in rooms B405 and B409.=20
+If you are unable to access Moodle from your own device, you will be able t=
+o do so from a computer in the lab. The duration of the exam is 35 minutes.=
+=20
+Unless you have a valid reason, your presence is required: a code will be p=
+rovided to you in the room. Excused absentees will receive the code via ema=
+il shortly before the start of the exam.=20
+Have a great weekend,=20
+Serge=20
+
+
+--=_4fa37d8d-f2d5-41bd-8226-106e92ffb1b4
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"font-family: trebuchet ms,sans-serif; font-size: =
+12pt; color: #000000"><div><span style=3D"font-size: 12pt;">@2pm</span><br>=
+</div><div data-marker=3D"__QUOTED_TEXT__"><div style=3D"font-family:'trebu=
+chet ms' , sans-serif;font-size:12pt;color:#000000"><div>=C3=A0 14:00</div>=
+<br><div>Chers =C3=A9tudiants,</div><div>Le QCM aura lieu en salle B405 et =
+B409. Si vous ne pouvez pas vous connecter sur moodle</div><div>depuis votr=
+e machine, vous pourrez le faire depuis un poste. L'=C3=A9preuve dure 35 mi=
+nutes.</div><div>Sauf excuse motiv=C3=A9e, vous devez =C3=AAtre pr=C3=A9sen=
+t : un code vous sera communiqu=C3=A9 en salle.</div><div>Les absents excus=
+=C3=A9s recevront le code par mail un peu avant le d=C3=A9but de l'=C3=A9pr=
+euve.</div><div>Bon week-end,</div><div>Serge</div><br><div>Dear students,&=
+nbsp;</div><div>The multiple-choice quiz will take place in rooms B405 and =
+B409.</div><div>If you are unable to access Moodle from your own device, yo=
+u will be able to do so from a computer in the lab. The duration of the exa=
+m is 35 minutes.</div><div>Unless you have a valid reason, your presence is=
+ required: a code will be provided to you in the room. Excused absentees wi=
+ll receive the code via email shortly before the start of the exam.&nbsp;</=
+div><div>Have a great weekend,&nbsp;</div><div>Serge</div></div><br></div><=
+/div></body></html>
+--=_4fa37d8d-f2d5-41bd-8226-106e92ffb1b4--
