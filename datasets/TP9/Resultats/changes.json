@@ -1,0 +1,2640 @@
+[
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "category_name",
+          "expression": "isBlank(value)",
+          "columnName": "category_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "category_name",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": "/",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column category_name by separator"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "category_name 4",
+          "expression": "isBlank(value)",
+          "columnName": "category_name 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "category_name 5",
+          "expression": "isBlank(value)",
+          "columnName": "category_name 5",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Samsung Galaxy Tab 3",
+          "Samsung Galaxy Tab 4",
+          "Samsung Galaxy Tablet",
+          "Samsung Galaxy Tab A",
+          "Samsung Galaxy Tab 4 Nook",
+          "Samsung Galaxy Tab A 8.0",
+          "Samsung galaxy tab",
+          "Samsung galaxy tab 2 7.0",
+          "Samsung galaxy tab 3",
+          "Samsung galaxy tab 4",
+          "Samsung galaxy tablet 3",
+          "2 Samsung galaxy tab 3 7\" light cases",
+          "3 Samsung Galaxy Earphones",
+          "SAMSUNG GALAXY 4 TABLET 8.0 16 GB",
+          "SAMSUNG GALAXY TAB 2",
+          "SAMSUNG GALAXY Tablet",
+          "SAMSUNG Galaxy Tab A 9.7\"",
+          "Samsung - Galaxy Tab 4 8.0.",
+          "Samsung Galaxy",
+          "Samsung Galaxy - Tablet Charger",
+          "Samsung Galaxy 2 Tab, 10.1",
+          "Samsung Galaxy 4 Tablet",
+          "Samsung Galaxy E Tablet 7\"",
+          "Samsung Galaxy Kid's Case Tab E Lite 7.0",
+          "Samsung Galaxy Note 10.1",
+          "Samsung Galaxy Note 8.0",
+          "Samsung Galaxy Note Pro 12.2",
+          "Samsung Galaxy Note Tablet",
+          "Samsung Galaxy Tab",
+          "Samsung Galaxy Tab (for parts or repair)",
+          "Samsung Galaxy Tab 10.1",
+          "Samsung Galaxy Tab 2",
+          "Samsung Galaxy Tab 2 (7-Inch) 2012 Mod",
+          "Samsung Galaxy Tab 2 10.1",
+          "Samsung Galaxy Tab 2 10.1\" Book Case",
+          "Samsung Galaxy Tab 2 7\" w/charger+case",
+          "Samsung Galaxy Tab 2 7.0 W/keyboard case",
+          "Samsung Galaxy Tab 2 8GB/ Free Case",
+          "Samsung Galaxy Tab 2 Gray ships free",
+          "Samsung Galaxy Tab 2-7.0",
+          "Samsung Galaxy Tab 3 (Sprint) 16GB",
+          "Samsung Galaxy Tab 3 (WiFi)",
+          "Samsung Galaxy Tab 3 (white)",
+          "Samsung Galaxy Tab 3 16GB (Sprint)",
+          "Samsung Galaxy Tab 3 8GB",
+          "Samsung Galaxy Tab 3 Book Cover Case",
+          "Samsung Galaxy Tab 3 For Parts",
+          "Samsung Galaxy Tab 3 Kids",
+          "Samsung Galaxy Tab 3 LITE",
+          "Samsung Galaxy Tab 3 Lite",
+          "Samsung Galaxy Tab 3 lite",
+          "Samsung Galaxy Tab 3, 7-inch",
+          "Samsung Galaxy Tab 4 16GB 10.1\" Tablet",
+          "Samsung Galaxy Tab 4 16gb",
+          "Samsung Galaxy Tab 4 8.0' Tablet Case",
+          "Samsung Galaxy Tab A 10.1 16gb Black",
+          "Samsung Galaxy Tab A 16 GB",
+          "Samsung Galaxy Tab A 7\" 8GB Wifi Black",
+          "Samsung Galaxy Tab A 7\" SM-T280 40gb",
+          "Samsung Galaxy Tab A 7inch (2016)",
+          "Samsung Galaxy Tab A Tablet",
+          "Samsung Galaxy Tab E BNIB 8\" 16 GB Blk",
+          "Samsung Galaxy Tab E Lite",
+          "Samsung Galaxy Tab E Lite 7.0",
+          "Samsung Galaxy Tab Pro 10 Tablet NEW",
+          "Samsung Galaxy Tab S 10.5\"",
+          "Samsung Galaxy Tab S2",
+          "Samsung Galaxy Tab S2 64 GB Black",
+          "Samsung Galaxy Tab S2 9.7 Tablet Case",
+          "Samsung Galaxy Tab S2 White 32GB",
+          "Samsung Galaxy Tab2 bluetooth Keyboard",
+          "Samsung Galaxy Tab4",
+          "Samsung Galaxy Tab4 Nook",
+          "Samsung Galaxy Tab4 with 360 case",
+          "Samsung Galaxy Tablet & Shockproof Case",
+          "Samsung Galaxy Tablet 16 GB",
+          "Samsung Galaxy Tablet 2!",
+          "Samsung Galaxy Tablet 3 Case and Keyboar",
+          "Samsung Galaxy Tablet 3 Lite",
+          "Samsung Galaxy Tablet Pro",
+          "Samsung Galaxy View",
+          "Samsung Galaxy note 10.1 Tablet Case",
+          "Samsung Galaxy note 8.0 tablet",
+          "Samsung Galaxy tab 3 Lite",
+          "Samsung Galaxy tab 3 lite",
+          "Samsung Galaxy tab A (2016)",
+          "Samsung galaxy 10.1 tablet - 32GB",
+          "Samsung galaxy Note Pro",
+          "Samsung galaxy Tab A 7\"",
+          "Samsung galaxy core prime",
+          "Samsung galaxy tab 2",
+          "Samsung galaxy tab 2 16gb 10.1 inch",
+          "Samsung galaxy tab 2 SGH-T779",
+          "Samsung galaxy tab 3 7 inch tablet",
+          "Samsung galaxy tab 4 16gb tablet",
+          "Samsung galaxy tab 4 for parts",
+          "Samsung galaxy tab A",
+          "Samsung galaxy tab A 8.0 case",
+          "Samsung galaxy tab Bluetooth keyboard",
+          "Samsung galaxy tablet",
+          "Samsung galaxy tablet 3 in black",
+          "Samsung galaxy tablet, perfect condition",
+          "Samsung.galaxy tab2",
+          "samsung galaxy tab 4",
+          "samsung galaxy tab3. parts 10\" screen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Samsung Galaxy Tab 3"
+      },
+      {
+        "from": [
+          "Amazon Kindle",
+          "Amazon kindle fire",
+          "Amazon Kindle Fire",
+          "Amazon kindle",
+          "Amazon Kindle (for parts)",
+          "Amazon Kindle 3G & Wi-Fi 6\" Ink Display",
+          "Amazon Kindle 4.1.0- Reduced Again!",
+          "Amazon Kindle 6\" 4th Gray eBook Reader",
+          "Amazon Kindle Fire 2016 version",
+          "Amazon Kindle Fire 7 Tablet",
+          "Amazon Kindle Fire HD",
+          "Amazon Kindle Fire HD 7 (LIKE NEW)",
+          "Amazon Kindle Fire HD 7\" X43Z60 Tablet",
+          "Amazon Kindle Fire HD 7\", 32GB Tablet!",
+          "Amazon Kindle Fire HD 8.9\"",
+          "Amazon Kindle Fire HD6 Kids Edition",
+          "Amazon Kindle Fire Tablet",
+          "Amazon Kindle Fire Tablet Brand New",
+          "Amazon Kindle Fire like new ships free",
+          "Amazon Kindle Fire tablet 8Gb",
+          "Amazon Kindle Fire ‑ Wi‑Fi ‑ 8 GB Black",
+          "Amazon Kindle Keyboard",
+          "Amazon Kindle Paperwhite Wifi+3G",
+          "Amazon Kindle Touch 3G 4th Gen",
+          "Amazon Kindle Wifi 4th Gen",
+          "Amazon Kindle eReader ebook",
+          "Amazon Kindle touch e-reader.",
+          "Amazon Kindle w/ Case",
+          "Amazon Kindle with Carrying Pouch",
+          "Amazon kindle 3",
+          "Amazon kindle 4GB glare free",
+          "Amazon kindle fire hd",
+          "Amazon kindle paper white",
+          "Amazon kindle silicone case",
+          "Amazon kindles-kids edition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amazon Kindle"
+      },
+      {
+        "from": [
+          "iPad mini",
+          "iPad Mini",
+          "iPad mini 2",
+          "iPad Mini 2",
+          "Ipad Mini",
+          "Ipad mini",
+          "IPAD MINI",
+          "IPad Mini",
+          "IPad Mini 2",
+          "IPad mini",
+          "Ipad Mini 2",
+          "iPad Mini 3",
+          "iPad mini 1",
+          "iPad mini 3",
+          "I Pad Mini",
+          "IPAD Mini 2",
+          "IPad Mini 4",
+          "Ipad Mini 1",
+          "Ipad Mini 3",
+          "Ipad Mini 4",
+          "Ipad mini 2",
+          "Ipad mini 3",
+          "iPAD MINI",
+          "iPad Mini 4",
+          "iPad mini 4",
+          "ipad mini"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini"
+      },
+      {
+        "from": [
+          "iPad Mini 16gb",
+          "iPad Mini 16GB",
+          "iPad mini 16 GB",
+          "IPAD MINI 16GB",
+          "IPAD MINI 2 16GB",
+          "IPad mini 32gb",
+          "Ipad Mini 2 (32Gb)",
+          "Ipad mini 16 GB",
+          "Ipad mini 16gb",
+          "Ipad mini 2 32gb",
+          "iPad Mini (16 GB)",
+          "iPad Mini - 16gb",
+          "iPad Mini 16 GB",
+          "iPad Mini 2 - 16gb",
+          "iPad Mini 2 32GB",
+          "iPad Mini 32GB",
+          "iPad Mini 64gb",
+          "iPad mini 2 16GB",
+          "iPad mini 32 GB",
+          "iPad mini 4 16gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 16gb"
+      },
+      {
+        "from": [
+          "Ipod touch 5th gen",
+          "iPod Touch 4th Generation",
+          "iPod Touch 6th Generation 16gbs",
+          "iPod touch 4th generation",
+          "IPod touch 4th gen",
+          "Ipod Touch 5th Generation 32GB with case",
+          "Ipod Touch 6th Generation",
+          "Ipod touch 5th Generation Screen cracked",
+          "Ipod touch 5th gen *for parts only*",
+          "iPod Touch (5th Generation) 12 GB",
+          "iPod Touch 4th Gen",
+          "iPod Touch 4th Gen, 32gb!",
+          "iPod Touch 5th Generation",
+          "iPod Touch 5th Generation 32gb",
+          "iPod Touch 6th Generation",
+          "iPod touch 5th generation 16gbs",
+          "iPod touch 5th generation blue",
+          "ipod Touch (4th gen.)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipod touch 5th gen"
+      },
+      {
+        "from": [
+          "Ipad 2 16gb",
+          "iPad 2 16gb",
+          "IPad 2 64GB",
+          "Ipad 2 (16gb)",
+          "Ipad 2 16 gb",
+          "Ipad 2 32gb",
+          "iPad 1 - 32 Gb",
+          "iPad 16gb",
+          "iPad 2 - 16 gb",
+          "iPad 2 - 32 GB",
+          "iPad 2 - 64GB",
+          "iPad 2 32 GB",
+          "iPad 2 32GB",
+          "iPad 2 32gb",
+          "iPad 3 16gb",
+          "iPod 3 32gb",
+          "iPod 8gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad 2 16gb"
+      },
+      {
+        "from": [
+          "iPad",
+          "iPad 2",
+          "iPod",
+          "Ipad",
+          "Ipod",
+          "IPad",
+          "Ipad 2",
+          "iPad 1",
+          "iPad 4",
+          "I pad",
+          "Ipad 4",
+          "Ipad2",
+          "iPad!",
+          "iPod 4",
+          "iPod 5",
+          "iPod 6",
+          "ipad 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad"
+      },
+      {
+        "from": [
+          "Kindle Paperwhite",
+          "Kindle paperwhite",
+          "Kindle Paper white e reader",
+          "Kindle PaperWhite E-Reader",
+          "Kindle Paperwhite - 7th Generation",
+          "Kindle Paperwhite 300PPI Display 7th gen",
+          "Kindle Paperwhite 3G E Reader Tablet",
+          "Kindle Paperwhite W/ Charger & Case",
+          "Kindle Paperwhite Wifi w/ Special Offers",
+          "Kindle Paperwhite with cover",
+          "Kindle Paperwhite. Hold for Samantha.",
+          "Kindle paperwhite wifi 4g with case",
+          "kindle paper white (black)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Paperwhite"
+      },
+      {
+        "from": [
+          "IPad Mini 1st Gen 16 GB",
+          "IPad mini 1st Generation HOLD FOR D",
+          "IPad mini 1st generation",
+          "Ipad Mini 1st Generation - Case Included",
+          "Ipad mini 1st generation",
+          "iPad Mini 1st Gen BUNDLE",
+          "iPad Mini 1st Generation",
+          "iPad Mini 1st Generation 16Gb No Cracks",
+          "iPad Mini 1st Generation Activation Lock",
+          "iPad Mini 1st generation with Wifi",
+          "iPad mini 1st Gen 16GB",
+          "iPad mini 1st gen black 16gb",
+          "iPad mini 1st generation 16g-- free ship"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Mini 1st Gen 16 GB"
+      },
+      {
+        "from": [
+          "Amazon fire tablet",
+          "AMAZON Fire Tablet",
+          "Amazon Fire Tablet",
+          "Amazon Fire Tablet 5th Generation",
+          "Amazon Fire Tablet 7\"",
+          "Amazon Fire Tablet 7\" Wifi 8GB",
+          "Amazon Fire Tablet 8 Gig. With Case",
+          "Amazon Fire Tablet 8GB",
+          "Amazon Fire Tablet!",
+          "Amazon Fire Tablet(Android)",
+          "Amazon Fire tablet 7 with alexa",
+          "Amazon fire 7\" tablet 8GB",
+          "Amazon fire tablet 7 inch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amazon fire tablet"
+      },
+      {
+        "from": [
+          "Samsung tablet",
+          "Samsung Tablet",
+          "10.1\" Samsung Tablet",
+          "SAMSUNG Tablet",
+          "Samsung 8.9\" tablet",
+          "Samsung Tab 3 Lite 7.0",
+          "Samsung Tab 3 Lite SM-T110",
+          "Samsung Tablet Version 4",
+          "Samsung tab 3 lite",
+          "Samsung tablet 4",
+          "Samsung tablet 8",
+          "Samsung tablet like new"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Samsung tablet"
+      },
+      {
+        "from": [
+          "Microsoft Surface 2",
+          "Microsoft Surface 2 32GB",
+          "Microsoft Surface 2 RT w/Keyboard, Chrgr",
+          "Microsoft Surface 2, 32GB",
+          "Microsoft Surface 3 Keyboard",
+          "Microsoft Surface Pen (New)",
+          "Microsoft Surface Pro 4 ( On Hold)",
+          "Microsoft Surface RT",
+          "Microsoft Surface pen in red",
+          "Microsoft surface pen for surface pro 3",
+          "Microsoft surface pro 4 type cover",
+          "Microsoft surface rt 2013"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Microsoft Surface 2"
+      },
+      {
+        "from": [
+          "IPAD MINI 4 128 GB wifi only",
+          "IPad mini 16GB Wi-fi works great",
+          "Ipad Mini 2 16GB WIFI",
+          "Ipad Mini 2 16gb A1489 - FOR PARTS ONLY",
+          "iPad Mini 16gb WiFi",
+          "iPad Mini 2 - 16gb wifi",
+          "iPad Mini 4 16GB Wifi - Brand New w/Case",
+          "iPad mini 16GB WIFI only",
+          "iPad mini 16GB wifi case stylus covers",
+          "iPad mini 2 16 gb wifi+ cellular",
+          "iPad mini 2 16GB Wi-Fi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPAD MINI 4 128 GB wifi only"
+      },
+      {
+        "from": [
+          "iPod 5th Generation",
+          "I pod 5th generation",
+          "IPod 4th Generation",
+          "Ipad 4th generation",
+          "Ipod 4th generation ( READ )",
+          "iPad 4th Generation",
+          "iPad 4th generation",
+          "iPod 4th generation HOLD!",
+          "iPod 5th Generation 30 GB Black",
+          "iPod 5th generation",
+          "ipod 5th generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPod 5th Generation"
+      },
+      {
+        "from": [
+          "iPad Air 32GB",
+          "IPad Air 124.6GB",
+          "IPad Air 64GB",
+          "Ipad air 64Gb",
+          "iPad Air 16GB",
+          "iPad Air 2 (16 GB)",
+          "iPad Air 2 128gb",
+          "iPad Air 2 16 gb",
+          "iPad Air 2 64gb",
+          "iPad Air 32 gb",
+          "iPad Air 64GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 32GB"
+      },
+      {
+        "from": [
+          "Andriod Tablet",
+          "Android Tablet",
+          "Android tablet",
+          "ANDROID TABLET",
+          "Android 4:1 Tablet PC",
+          "Android Tablet New In Box",
+          "Android Tablet SuperSonic",
+          "Android Tablet tech pad 7inches",
+          "Android tablet with keyboard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Andriod Tablet"
+      },
+      {
+        "from": [
+          "iPad Air 2",
+          "iPad Air",
+          "IPAD AIR 1",
+          "Ipad Air",
+          "Ipad Air 2",
+          "Ipad air",
+          "Ipad air 2",
+          "iPad Air 1",
+          "iPad Air2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 2"
+      },
+      {
+        "from": [
+          "Galaxy Tab 3",
+          "Galaxy Tab 4",
+          "Galaxy tab 2",
+          "Galaxy Tab A 7.0",
+          "Galaxy tab 4..",
+          "Galaxy tab 4.0",
+          "Galaxy tab A",
+          "Galaxy tab4",
+          "⚡ Galaxy Tab 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Galaxy Tab 3"
+      },
+      {
+        "from": [
+          "Ipad mini case",
+          "iPad mini case",
+          "IPad Mini Case",
+          "Ipad Mini Case",
+          "iPad Mini 2 Case",
+          "iPad mini 2/3 case",
+          "iPad mini case.",
+          "ipad mini case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad mini case"
+      },
+      {
+        "from": [
+          "iPod Touch",
+          "iPod touch",
+          "Ipod Touch",
+          "IPod Touch",
+          "Ipod touch",
+          "iPod 5 Touch",
+          "iPod Touch 5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPod Touch"
+      },
+      {
+        "from": [
+          "IPad First Generation 32gb",
+          "IPad first generation 64gig",
+          "Ipad first generation",
+          "iPad 1 first generation 64GB",
+          "iPad First Gen 16GB",
+          "iPad First Generation",
+          "iPad first generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad First Generation 32gb"
+      },
+      {
+        "from": [
+          "RCA 7 Voyager tablet and case NWT",
+          "RCA Voyager 7\" Tablet",
+          "RCA Voyager III 7\" Tablet black",
+          "RCA Voyager III 7\"Tablet black",
+          "RCA Voyager Tablet",
+          "RCA Voyager Tablet (Fully Working)",
+          "RCA voyager tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RCA 7 Voyager tablet and case NWT"
+      },
+      {
+        "from": [
+          "Verizon Ellipsis 7 Tablet",
+          "Verizon Ellipsis 7 8G 4G/LTE Android tab",
+          "Verizon Ellipsis 7 LTE BLACK 8GB",
+          "Verizon Ellipsis 7 tablet",
+          "Verizon Ellipsis 8 Tablet",
+          "Verizon ellipsis 7 tablet",
+          "Verizon ellipsis tablet does not turn on"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Verizon Ellipsis 7 Tablet"
+      },
+      {
+        "from": [
+          "Apple Ipad 2 16GB Wifi",
+          "Apple iPad 2 16GB Wifi Only",
+          "Apple iPad 2 64GB, Wi-Fi + 3G (at&t)",
+          "Apple iPad 3-32 GB- Wifi Only",
+          "Apple iPad 32gb first generation",
+          "Apple iPad 32gb wifi only model a1822",
+          "Apple ipad 2 A1395 32gb WiFi Tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Ipad 2 16GB Wifi"
+      },
+      {
+        "from": [
+          "iPad 1st generation",
+          "Ipad 1st Generation",
+          "iPad 1st Generation 16G",
+          "iPad 1st Generation 16Gb",
+          "iPad 1st Generation 64GB At&T UNLOCKED",
+          "iPad 1st generation 16gb, wifi",
+          "iPod 1st generation 80gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 1st generation"
+      },
+      {
+        "from": [
+          "Apple iPad AIR 2 16 gb Wifi Gold",
+          "Apple iPad Air 16GB",
+          "Apple iPad Air 16GB UNLOCKED",
+          "Apple iPad Air 2 64GB Space Gray",
+          "Apple iPad Air 2 64GB Wi-Fi 9.7in Gold",
+          "Apple iPad Air 2 64gb Space Grey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad AIR 2 16 gb Wifi Gold"
+      },
+      {
+        "from": [
+          "Samsung Tab 2 10.1",
+          "Samsung Tab 3",
+          "Samsung Tab 4 7.0",
+          "Samsung tab 3",
+          "Samsung tab 4",
+          "Samsung tab 5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Samsung Tab 2 10.1"
+      },
+      {
+        "from": [
+          "iPad 4 leather case, iPad 3 , iPad 2",
+          "iPad 3 leather case, iPad 4 , iPad 2",
+          "IPad 4 leather case, iPad 3 , iPad 2",
+          "iPad 4 leather case , iPad 3 , iPad 2",
+          "iPad 4 leather case. iPad 2 , iPad 3",
+          "iPad 4 leather cases , iPad 3 iPad 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 4 leather case, iPad 3 , iPad 2"
+      },
+      {
+        "from": [
+          "iPad 2nd Generation 32 GB",
+          "iPad 2nd Generation 32gb",
+          "iPad 2nd generation",
+          "iPad 2nd generation 32gb",
+          "iPad 2nd generation 32gb wifi + celular",
+          "iPod 2nd generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 2nd Generation 32 GB"
+      },
+      {
+        "from": [
+          "5 Kindle Fire HD 8 cases NEW!",
+          "Kindle Fire HDX 7 -EXCELLENT condition!!",
+          "Kindle Fire HDX 7\" 16 GB",
+          "Kindle fire 7 HD 12 GB",
+          "Kindle fire HD Cover"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5 Kindle Fire HD 8 cases NEW!"
+      },
+      {
+        "from": [
+          "Kindle fire",
+          "Kindle Fire",
+          "Kindle Fire 7",
+          "Kindle Fire 7\"",
+          "Kindle Fire."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle fire"
+      },
+      {
+        "from": [
+          "Kindle Fire HD",
+          "Kindle Fire HD 6",
+          "Kindle Fire Hd 7",
+          "Kindle fire HD",
+          "Kindle fire HD 10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire HD"
+      },
+      {
+        "from": [
+          "Apple iPad mini",
+          "Apple IPad Mini",
+          "Apple iPad Mini",
+          "Apple iPad mini 3",
+          "Apple iPad mini!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad mini"
+      },
+      {
+        "from": [
+          "iPad case",
+          "IPad 3 + Case",
+          "iPad 1 case",
+          "iPad 2/3/4 Case",
+          "ipad case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad case"
+      },
+      {
+        "from": [
+          "Speck StyleFolio Case iPad Air NEW",
+          "Speck StyleFolio Case iPad Pro 12.9 NEW",
+          "Speck StyleFolio iPad Mini 4 Purple/Teal",
+          "Speck StyleFolio iPad mini",
+          "Speck stylefolio iPad 2 3 4 case cover"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Speck StyleFolio Case iPad Air NEW"
+      },
+      {
+        "from": [
+          "1st Generation Ipad",
+          "1st Generation iPad Mini",
+          "1st generation iPad 16gb",
+          "1st generation ipad",
+          "1st generation ipod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1st Generation Ipad"
+      },
+      {
+        "from": [
+          "Ipod nano 5th generation",
+          "Ipod nano 7th generation",
+          "iPod Nano 6th generation- 16GB",
+          "iPod Nano 7th Generation In Case w/ Cord",
+          "iPod nano 4th gen 8gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipod nano 5th generation"
+      },
+      {
+        "from": [
+          "Bluetooth keyboard",
+          "Bluetooth Keyboard for IPad Air",
+          "Bluetooth keyboard case for ipad 2",
+          "Bluetooth keyboard case ipad 2/3/4/air",
+          "bluetooth keyboard for ipad"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bluetooth keyboard"
+      },
+      {
+        "from": [
+          "Apple iPod Touch 4th Generation 8 GB",
+          "Apple iPod Touch 4th Generation 8G Black",
+          "Apple iPod Touch 5th Gen",
+          "Apple iPod touch 5th generation",
+          "Apple iPod touch 5th generation blue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPod Touch 4th Generation 8 GB"
+      },
+      {
+        "from": [
+          "Apple IPad 3rd gen - cracked screen 64GB",
+          "Apple Ipad 3rd Gen, like new!!",
+          "Apple iPad 3rd Generation ---ON HOLD",
+          "Apple iPad 3rd Generation 32 Gb Black",
+          "Apple iPad 3rd Generation White 32GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple IPad 3rd gen - cracked screen 64GB"
+      },
+      {
+        "from": [
+          "Apple Ipad Mini 16gb White 1 Generation",
+          "Apple iPad Mini 16gb",
+          "Apple iPad mini 16GB Wi-Fi",
+          "Apple ipad 2 mini 16gb",
+          "Apple ipad mini 16 gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Ipad Mini 16gb White 1 Generation"
+      },
+      {
+        "from": [
+          "iPad mini Smart Cover",
+          "iPad Mini 4 Smart Cover",
+          "iPad mini 2 Smart Cover PRODUCT RED",
+          "iPad mini smart cover case with stylus",
+          "ipad mini smart cover"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini Smart Cover"
+      },
+      {
+        "from": [
+          "iPad 3rd Generation",
+          "IPad 3rd Generation digitizer glass Part",
+          "IPad 3rd generation",
+          "Ipad 3rd Generation",
+          "iPad 3rd Generation 32gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 3rd Generation"
+      },
+      {
+        "from": [
+          "Nexus 7 Tablet 16GB WiFi",
+          "Nexus 7 tablet",
+          "Nexus 7 tablet.",
+          "Nexus Tablet",
+          "Nexus tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nexus 7 Tablet 16GB WiFi"
+      },
+      {
+        "from": [
+          "IPad Mini First Generation 16GBS",
+          "IPad Mini first Gen. W/ Coach case",
+          "IPad mini first gen",
+          "iPad Mini (first gen)",
+          "ipad mini first gen 16 GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Mini First Generation 16GBS"
+      },
+      {
+        "from": [
+          "Apple Ipad",
+          "Apple Ipod",
+          "Apple iPad",
+          "Apple iPad 2",
+          "Apple iPad 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Ipad"
+      },
+      {
+        "from": [
+          "Barnes And Noble Giftcard",
+          "Barnes and Noble Gift Card",
+          "Barnes and Noble Nook",
+          "Barnes and noble nook."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barnes And Noble Giftcard"
+      },
+      {
+        "from": [
+          "Apple IPad 2 2nd Generation 32GB",
+          "Apple IPad 2nd Generation",
+          "Apple Ipad 2nd generation 16 gb",
+          "Apple iPad 2nd Generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple IPad 2 2nd Generation 32GB"
+      },
+      {
+        "from": [
+          "iPad 1 Mini On Hold",
+          "iPad mini 2 (ON HOLD FOR BUYER)",
+          "iPad mini ON HOLD FOR NICOLE RODAS",
+          "iPad mini on hold for jayli"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 1 Mini On Hold"
+      },
+      {
+        "from": [
+          "IPad mini Bluetooth keyboard",
+          "iPad Mini 1/2/3 Bluetooth Keyboard Case",
+          "iPad mini Bluetooth keyboard",
+          "iPad mini Bluetooth keyboard case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad mini Bluetooth keyboard"
+      },
+      {
+        "from": [
+          "iPad Mini 2 with Case",
+          "iPad Mini With Case Screen Protector",
+          "iPad mini with case( on hold)!!!!",
+          "ipad mini 2 with case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 2 with Case"
+      },
+      {
+        "from": [
+          "Apple IPad 2 16gb",
+          "Apple Ipad 2 64 GB",
+          "Apple iPad 16GB",
+          "Apple iPad 3 16gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple IPad 2 16gb"
+      },
+      {
+        "from": [
+          "Nabi Jr",
+          "Nabi jr",
+          "Nabi JR",
+          "Nabi jr."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nabi Jr"
+      },
+      {
+        "from": [
+          "NOOK Simple Touch",
+          "Nook Simple Touch Reader (best offer)",
+          "Nook Simple Touch with Charger&Case",
+          "Nook simple touch E reader"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NOOK Simple Touch"
+      },
+      {
+        "from": [
+          "I pad mini 16 gb, iPad only. No charger",
+          "IPad Mini 64gb Black Case 1st Generation",
+          "iPad Mini 16gb (PRICE FIRM)",
+          "iPad mini 16gb black"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "I pad mini 16 gb, iPad only. No charger"
+      },
+      {
+        "from": [
+          "IPAD AIR OTTERBOX CASE",
+          "Ipad air otter box",
+          "iPad Air 2 otterbox shell",
+          "iPad Air Otterbox Brand New"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPAD AIR OTTERBOX CASE"
+      },
+      {
+        "from": [
+          "Pink iPad Mini Rotation Case",
+          "Pink iPad mini rotation case",
+          "Pink iPad mini rotation case mini 1/2/3",
+          "Pink iPad mini rotation case, mini 1/2/3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pink iPad Mini Rotation Case"
+      },
+      {
+        "from": [
+          "iPad Air 2 Case",
+          "iPad Air 2 case",
+          "iPad Air Case",
+          "iPad Air case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 2 Case"
+      },
+      {
+        "from": [
+          "Otterbox Defender Case For iPad Air NEW",
+          "Otterbox Defender Case for Tab 4 8.0",
+          "Otterbox Defender Case for iPad Air",
+          "Otterbox Defender IPad mini 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Otterbox Defender Case For iPad Air NEW"
+      },
+      {
+        "from": [
+          "Apple iPad 1st Gen 16GB Wifi EUC",
+          "Apple iPad 1st Gen. 16gb",
+          "Apple iPad 1st gen 16gb",
+          "Apple iPad 1st generation silv/blk 16 gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad 1st Gen 16GB Wifi EUC"
+      },
+      {
+        "from": [
+          "NEW Bluetooth Wireless Keyboard Kindle",
+          "NEW Bluetooth Wireless Keyboard Samsung",
+          "NEW Bluetooth Wireless Keyboard Surface"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEW Bluetooth Wireless Keyboard Kindle"
+      },
+      {
+        "from": [
+          "Apple Pencil Brand New",
+          "Apple Pencil iPad Pro",
+          "Apple Pencil- iPad Pro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Pencil Brand New"
+      },
+      {
+        "from": [
+          "iPad Mini 2nd Gen (W/Lifeproof)",
+          "iPad Mini 2nd Gen. Retina Display (16GB)",
+          "iPad mini 2nd generation 128GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 2nd Gen (W/Lifeproof)"
+      },
+      {
+        "from": [
+          "Michael Kors iPad Mini Sleeve",
+          "Michael Kors iPad mini tablet case",
+          "Michael kors iPad cover"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Michael Kors iPad Mini Sleeve"
+      },
+      {
+        "from": [
+          "Kindle Fire 1st Generation",
+          "Kindle (first edition) with case!",
+          "Kindle Fire 1st Generation - With Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire 1st Generation"
+      },
+      {
+        "from": [
+          "iPad Pro Smart Cover",
+          "iPad Pro 9.7 Smart Keyboard",
+          "iPad Pro 9.7 Smart Keyboard And Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Pro Smart Cover"
+      },
+      {
+        "from": [
+          "Kindle Fire HD 7 3rd generation 16 Gb",
+          "Kindle fire HD [rm] obo",
+          "Kindle fire hd 3rd gen."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire HD 7 3rd generation 16 Gb"
+      },
+      {
+        "from": [
+          "2 Kindle Fire Tablets",
+          "Kindle Fire tablet - magenta - 5th gen",
+          "Kindle fire tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 Kindle Fire Tablets"
+      },
+      {
+        "from": [
+          "iPod shuffle",
+          "Ipod shuffle",
+          "iPod Shuffle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPod shuffle"
+      },
+      {
+        "from": [
+          "Samsung Tab 3 7 inch tablet",
+          "Samsung Tab 4-Nook Edition",
+          "Samsung Tab A 9.7 inch wifi only"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Samsung Tab 3 7 inch tablet"
+      },
+      {
+        "from": [
+          "Samsung Tab 3 10.1 (White)",
+          "Samsung Tab 4 Tablet",
+          "Samsung tab 2 tablet 10.1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Samsung Tab 3 10.1 (White)"
+      },
+      {
+        "from": [
+          "Gold IPad mini 4",
+          "Gold iPad Mini 3",
+          "Gold iPad mini 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gold IPad mini 4"
+      },
+      {
+        "from": [
+          "Amazon Fire",
+          "Amazon Fire 7",
+          "Amazon fire"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amazon Fire"
+      },
+      {
+        "from": [
+          "iPad mini rotation case",
+          "iPad mini rotation case, iPad mini 1/2/3",
+          "iPad mini rotation case, mini 1/2/3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini rotation case"
+      },
+      {
+        "from": [
+          "iPad Mini Pink Case W/Lightning Cable",
+          "iPad mini pink butterfly case",
+          "iPod Mini-pink"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini Pink Case W/Lightning Cable"
+      },
+      {
+        "from": [
+          "Kindle (7th Generation)",
+          "Kindle 7th Generation",
+          "kindle 5th generation and Ebook light"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle (7th Generation)"
+      },
+      {
+        "from": [
+          "RCA tablet",
+          "RCA Tablet",
+          "RCA tablet 7\"."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RCA tablet"
+      },
+      {
+        "from": [
+          "Amazon Tablet",
+          "Amazon tablet 7\" 8GB",
+          "Amazon tablet fire 7 with alexa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amazon Tablet"
+      },
+      {
+        "from": [
+          "Verizon Tablet",
+          "Verizon tablet",
+          "Verizon Tablet 4G!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Verizon Tablet"
+      },
+      {
+        "from": [
+          "Galaxy tab s2",
+          "Galaxy Tab S",
+          "Galaxy Tab S 10.5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Galaxy tab s2"
+      },
+      {
+        "from": [
+          "IPad Pro 32gb Wi-Fi and Cellular new",
+          "Ipad Pro 12.9 128gb Wifi & Cellular",
+          "Ipad Pro 12.9\" 128 GB Wifi + Cellular"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Pro 32gb Wi-Fi and Cellular new"
+      },
+      {
+        "from": [
+          "Wireless Keyboard",
+          "Wireless Keyboard for Mac",
+          "Wireless Keyboard for iPad 2 or iPad 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wireless Keyboard"
+      },
+      {
+        "from": [
+          "8\" NextBook Tablet",
+          "NEXT BOOK TABLET (read desc)",
+          "Next book tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "8\" NextBook Tablet"
+      },
+      {
+        "from": [
+          "NABI JR tablet for kids",
+          "Nabi Jr Tablet",
+          "Nabi Jr. tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NABI JR tablet for kids"
+      },
+      {
+        "from": [
+          "Wacom Intuos Draw Tablet",
+          "Wacom Intuos Draw tablet",
+          "Wacom intuous drawing tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wacom Intuos Draw Tablet"
+      },
+      {
+        "from": [
+          "Apple IPad Mini 1st Gen 32gb",
+          "Apple iPad Mini 1st Gen Smart Cover",
+          "Apple iPad mini 1/2/3 Smart Cover"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple IPad Mini 1st Gen 32gb"
+      },
+      {
+        "from": [
+          "White iPad Mini 2 (16GB) (AT&T)",
+          "White iPad mini 16 gb",
+          "White iPad mini 16GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "White iPad Mini 2 (16GB) (AT&T)"
+      },
+      {
+        "from": [
+          "Nabi tablet",
+          "Nabi 2 tablet.",
+          "Nabi Tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nabi tablet"
+      },
+      {
+        "from": [
+          "IPad Mini Case Fits Ipad Mini 1, 2, 3",
+          "Ipad Mini Case Fits Ipad Mini 1, 2, 3",
+          "iPad Mini Case For 1, 2 and 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Mini Case Fits Ipad Mini 1, 2, 3"
+      },
+      {
+        "from": [
+          "iPad Mini 16GB 4th Gen Original Box",
+          "iPad Mini 2 32GB With Zagg Keyboard Case",
+          "iPad mini 2 64GB with keyboard case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 16GB 4th Gen Original Box"
+      },
+      {
+        "from": [
+          "Brand NEW sealed IPad Mini 2 32GB",
+          "Brand New Sealed iPad Pro 12.9\"",
+          "Brand new sealed Apple Ipad mini 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brand NEW sealed IPad Mini 2 32GB"
+      },
+      {
+        "from": [
+          "iPad mini keyboard",
+          "IPad Mini 2 Keyboard Case",
+          "iPad Mini Keyboard Folio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini keyboard"
+      },
+      {
+        "from": [
+          "iPad Mini 2 - 16 GB - Accessories",
+          "iPad mini 16gb (Comes with case)",
+          "iPad mini 4 64gb gold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 2 - 16 GB - Accessories"
+      },
+      {
+        "from": [
+          "Ipad Mini 16gb White",
+          "iPad Mini 16GB White/Silver w/ case",
+          "iPad mini 1 16gb -white"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad Mini 16gb White"
+      },
+      {
+        "from": [
+          "iPad Mini 4 32Gb Silver",
+          "iPad mini 1 16gbs",
+          "iPad mini 16GB Space Gray"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 4 32Gb Silver"
+      },
+      {
+        "from": [
+          "Drawing Tablet",
+          "Drawing Tablet (ON HOLD)",
+          "Drawing Tablet Wacom Intuos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Drawing Tablet"
+      },
+      {
+        "from": [
+          "iPad Air 1 - 16gb - free shipping",
+          "iPad Air 2 128gb Verizon WIFI Space Gray",
+          "iPad Air 2 16gb + Verso Book Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 1 - 16gb - free shipping"
+      },
+      {
+        "from": [
+          "Apple iPad 3 (64GB+AT&T 4G+Wifi)",
+          "Apple iPad 32GB White",
+          "Apple iPod 8gb touch works wi fi Music"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad 3 (64GB+AT&T 4G+Wifi)"
+      },
+      {
+        "from": [
+          "UNIVERSAL Tablet 7-8\" Case",
+          "Universal Tablet or E-Reader Case",
+          "Universal tablet folio case 7 8 inch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UNIVERSAL Tablet 7-8\" Case"
+      },
+      {
+        "from": [
+          "iPod Touch 16gb",
+          "iPod touch 32GB",
+          "iPod touch 5 16 gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPod Touch 16gb"
+      },
+      {
+        "from": [
+          "iPad Pro 9.7 case",
+          "iPad Pro case",
+          "iPad Pro case 9.7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Pro 9.7 case"
+      },
+      {
+        "from": [
+          "Ipad air 2 32gb Gold",
+          "iPad Air 2 128gb Gold",
+          "ipad air 2 32gb Gold WiFi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad air 2 32gb Gold"
+      },
+      {
+        "from": [
+          "iPad Pro 9.7 Rose Gold 32 GB",
+          "iPad Pro Ross Gold 32GB",
+          "iPad Pro | Rose Gold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Pro 9.7 Rose Gold 32 GB"
+      },
+      {
+        "from": [
+          "IPad Air 1 - 16gb brand new unopened",
+          "iPad Air 1 - 16gb - brand new unopened",
+          "iPad Air 16gb BRAND NEW UN OPPENED"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Air 1 - 16gb brand new unopened"
+      },
+      {
+        "from": [
+          "Ipod 3rd Gen 8GB",
+          "iPad 3rd Gen 16gb WIFI only",
+          "iPad 3rd Gen 32Gb READ DESCRIPTION!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipod 3rd Gen 8GB"
+      },
+      {
+        "from": [
+          "IPad 2/3/4 Bluetooth Keyboard Case",
+          "iPad Bluetooth keyboard case",
+          "iPad Bluetooth keyboard for IPad mini 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad 2/3/4 Bluetooth Keyboard Case"
+      },
+      {
+        "from": [
+          "Apple Pencil",
+          "Apple Pencil!",
+          "Apple pencil"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Pencil"
+      },
+      {
+        "from": [
+          "IPad Mini 3 (FREE SHIPPING)",
+          "IPad mini free shipping",
+          "iPad mini 2!!! FREE SHIPPING!!!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Mini 3 (FREE SHIPPING)"
+      },
+      {
+        "from": [
+          "Ipad pro 9.7 inch wifi cellular 32gb",
+          "iPad Pro 9.7 inch Flip cover",
+          "iPad Pro 9.7-Inch Wifi 32GB Rose Gold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad pro 9.7 inch wifi cellular 32gb"
+      },
+      {
+        "from": [
+          "Ipad 3 generation",
+          "iPad 1 generation 64gb wifi 9.7inch",
+          "ipad 4 generation 32GB with case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad 3 generation"
+      },
+      {
+        "from": [
+          "iPad mini 2 wifi 32GB",
+          "iPad mini Wifi 16gb Black/Slate 1st Gen",
+          "iPad mini wifi 16gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini 2 wifi 32GB"
+      },
+      {
+        "from": [
+          "IPAD AiR 1ST GEN 32GB",
+          "IPad Air 1st Gen 32GB Read Description",
+          "iPad Air 1st Generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPAD AiR 1ST GEN 32GB"
+      },
+      {
+        "from": [
+          "Kindle Fire case",
+          "kindle fire case brand new"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire case"
+      },
+      {
+        "from": [
+          "100pcs NEW 7\"x11.5\" Bubble Pouch Mailers",
+          "25 pcs NEW 7\"x11.5\" Bubble Pouch Mailers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "100pcs NEW 7\"x11.5\" Bubble Pouch Mailers"
+      },
+      {
+        "from": [
+          "Apple Pencil NWOT",
+          "Apple Pencil Never User"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Pencil NWOT"
+      },
+      {
+        "from": [
+          "Apple Pencil for iPad Pro",
+          "Apple Pencil for IPad Pro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Pencil for iPad Pro"
+      },
+      {
+        "from": [
+          "RCA Tablet and Charging Cable",
+          "Rca 8\" tablet android with charger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RCA Tablet and Charging Cable"
+      },
+      {
+        "from": [
+          "Nook Color",
+          "Nook color"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nook Color"
+      },
+      {
+        "from": [
+          "iPad 64 GB 3rd gen",
+          "iPod 8GB 3rd gen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 64 GB 3rd gen"
+      },
+      {
+        "from": [
+          "Samsung Book Cover for Galaxy Tab-A-8.0\"",
+          "Samsung Book Cover✨for Galaxy Tab-A-8.0\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Samsung Book Cover for Galaxy Tab-A-8.0\""
+      },
+      {
+        "from": [
+          "Apple iPad Pro Smart Keyboard (9.7 in)",
+          "Apple iPad Pro Smart keyboard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad Pro Smart Keyboard (9.7 in)"
+      },
+      {
+        "from": [
+          "iPad mini 7 8 inch tablet folio case",
+          "iPad mini 7 inch tablet folio case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini 7 8 inch tablet folio case"
+      },
+      {
+        "from": [
+          "APPLE iPod nano 16GB",
+          "Apple iPod nano 8 gb silver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "APPLE iPod nano 16GB"
+      },
+      {
+        "from": [
+          "iCloud Locked iPad Air 2",
+          "iCloud locked iPad Air 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iCloud Locked iPad Air 2"
+      },
+      {
+        "from": [
+          "iPad 16 GB with case",
+          "iPad 2 16GB with case & charger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 16 GB with case"
+      },
+      {
+        "from": [
+          "*BRAND NEW* RCA Voyager Tablet",
+          "Brand New, RCA Voyager Tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "*BRAND NEW* RCA Voyager Tablet"
+      },
+      {
+        "from": [
+          "Belkin IPad Mini Keyboard Case",
+          "Belkin iPad Mini 1 2 3 Folio Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Belkin IPad Mini Keyboard Case"
+      },
+      {
+        "from": [
+          "Kindle Keyboard 3G",
+          "Kindle keyboard with Wifi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Keyboard 3G"
+      },
+      {
+        "from": [
+          "Apple Ipad Air 2",
+          "Apple iPad Air 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Ipad Air 2"
+      },
+      {
+        "from": [
+          "Griffin Survivor iPad 2 case",
+          "Griffin survivor case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Griffin Survivor iPad 2 case"
+      },
+      {
+        "from": [
+          "iPad Mini 16 Gigs With Box And Case",
+          "iPad Mini 32 gigs At&t & wifi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 16 Gigs With Box And Case"
+      },
+      {
+        "from": [
+          "Kindle Fire 6 HD (4th Generation)&Case",
+          "Kindle fire HD 6 (4th gen)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire 6 HD (4th Generation)&Case"
+      },
+      {
+        "from": [
+          "Sticker - Baby Minnie & Mickey B - Black",
+          "Sticker - Baby Minnie C - Black"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sticker - Baby Minnie & Mickey B - Black"
+      },
+      {
+        "from": [
+          "Kindle Fire HD 7 inch 8gb",
+          "Kindle Fire HD and case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire HD 7 inch 8gb"
+      },
+      {
+        "from": [
+          "iPod Nano",
+          "IPod nano"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPod Nano"
+      },
+      {
+        "from": [
+          "IPod classic 30",
+          "iPod Classic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPod classic 30"
+      },
+      {
+        "from": [
+          "Rca 2 In 1 tablet",
+          "Rca 7 in tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rca 2 In 1 tablet"
+      },
+      {
+        "from": [
+          "Ipad Mini 2 Brand New Wifi + Cellular",
+          "iPad mini 4 Brand New"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad Mini 2 Brand New Wifi + Cellular"
+      },
+      {
+        "from": [
+          "Nook",
+          "Nook ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nook"
+      },
+      {
+        "from": [
+          "Nabi",
+          "Nabi 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nabi"
+      },
+      {
+        "from": [
+          "iPad mini NEW",
+          "iPad mini one"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini NEW"
+      },
+      {
+        "from": [
+          "IPad mini 2 wifi",
+          "iPad Mini Wi-Fi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad mini 2 wifi"
+      },
+      {
+        "from": [
+          "Wacom Bamboo FUN Drawing Tablet",
+          "Wacom Bamboo Fun Drawing Tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wacom Bamboo FUN Drawing Tablet"
+      },
+      {
+        "from": [
+          "Kindle Fire 8.9 inch",
+          "Kindle fire 7 inch black 8gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle Fire 8.9 inch"
+      },
+      {
+        "from": [
+          "iPad Mini 2 (read Description)",
+          "iPad mini rotating case free shipping"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 2 (read Description)"
+      },
+      {
+        "from": [
+          "iPad Mini 2 Bundle",
+          "iPad mini 1/2/3 bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 2 Bundle"
+      },
+      {
+        "from": [
+          "Logitech Bluetooth iPad Keyboard",
+          "Logitech Bluetooth keyboard for iPad"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Logitech Bluetooth iPad Keyboard"
+      },
+      {
+        "from": [
+          "Apple iPad 2,3,4 Case",
+          "Apple iPad case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad 2,3,4 Case"
+      },
+      {
+        "from": [
+          "Apple Wireless Keyboard",
+          "Apple A1314 wireless keyboard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple Wireless Keyboard"
+      },
+      {
+        "from": [
+          "IPad Pro Gold Flip case Cover screen",
+          "iPad Pro Gold 128GB 12.9 inch screen."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Pro Gold Flip case Cover screen"
+      },
+      {
+        "from": [
+          "I pad 16 G",
+          "Ipad 16g"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "I pad 16 G"
+      },
+      {
+        "from": [
+          "LG TABLET",
+          "LG Tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LG TABLET"
+      },
+      {
+        "from": [
+          "Speck ipad mini case",
+          "Speck ipad mini 1 2 3 case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Speck ipad mini case"
+      },
+      {
+        "from": [
+          "2 Proscan tablets.",
+          "Proscan tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2 Proscan tablets."
+      },
+      {
+        "from": [
+          "NOOK e-reader",
+          "Nook e-reader"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NOOK e-reader"
+      },
+      {
+        "from": [
+          "Nabi Dreamtab Pen (NEW)",
+          "Nabi Dreamtab pen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nabi Dreamtab Pen (NEW)"
+      },
+      {
+        "from": [
+          "Nextbook Ares 8A Tablet",
+          "Nextbook ares 8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nextbook Ares 8A Tablet"
+      },
+      {
+        "from": [
+          "IPAD PRO 12.9\" 128gb UNLOCKED",
+          "iPad Pro 12.9” 128gb Unlocked"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPAD PRO 12.9\" 128gb UNLOCKED"
+      },
+      {
+        "from": [
+          "Barnes & Noble Nook",
+          "Barnes & Noble nook color tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barnes & Noble Nook"
+      },
+      {
+        "from": [
+          "RCA Viking Pro 10.1 PRICE DROP!!",
+          "RCA Viking Pro tablet (color black)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RCA Viking Pro 10.1 PRICE DROP!!"
+      },
+      {
+        "from": [
+          "LG G Pad 7.0 - Tablet",
+          "LG G Pad 7.0 Tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LG G Pad 7.0 - Tablet"
+      },
+      {
+        "from": [
+          "Bluetooth wireless keyboard",
+          "Bluetooth Wireless Keyboard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bluetooth wireless keyboard"
+      },
+      {
+        "from": [
+          "IPad bundle",
+          "iPad 2 bundle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad bundle"
+      },
+      {
+        "from": [
+          "10 Inch Tablet",
+          "7 inch tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10 Inch Tablet"
+      },
+      {
+        "from": [
+          "RCA Voyager!",
+          "RCA voyager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RCA Voyager!"
+      },
+      {
+        "from": [
+          "BRAND NEW APPLE IPAD",
+          "BRAND NEW Apple iPad Mini 128GB Wi-Fi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BRAND NEW APPLE IPAD"
+      },
+      {
+        "from": [
+          "iPad Mini Cases (2)",
+          "iPad Mini w/ accessories"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini Cases (2)"
+      },
+      {
+        "from": [
+          "New Kindle Fire Tablet",
+          "New kindle fire hd 6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Kindle Fire Tablet"
+      },
+      {
+        "from": [
+          "iPad Mini Case And Bluetooth Keyboard",
+          "iPad mini case and Bluetooth keyboard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini Case And Bluetooth Keyboard"
+      },
+      {
+        "from": [
+          "IPad 64GB 1st Generation",
+          "iPad 32GB 1st Gen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad 64GB 1st Generation"
+      },
+      {
+        "from": [
+          "Apple iPad Mini 2 Box Only",
+          "Apple iPad mini box"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad Mini 2 Box Only"
+      },
+      {
+        "from": [
+          "APPLE IPAD MINI 2 WI-FI 16GB SILVER",
+          "Apple iPad mini first generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "APPLE IPAD MINI 2 WI-FI 16GB SILVER"
+      },
+      {
+        "from": [
+          "Mini iPad case Brand New",
+          "Mini ipad case PORTABLE and shockproof"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mini iPad case Brand New"
+      },
+      {
+        "from": [
+          "iPad Mini 32g Silver",
+          "iPad Mini Case, LoHi Apple iPad Mini 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Mini 32g Silver"
+      },
+      {
+        "from": [
+          "iPad mini Grade A",
+          "iPad mini great condition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini Grade A"
+      },
+      {
+        "from": [
+          "Ipad Air 2 Hybrid Silicone Case /Stand",
+          "iPad Air |Parts Only|"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipad Air 2 Hybrid Silicone Case /Stand"
+      },
+      {
+        "from": [
+          "iPad Air 2 360 Rotating Case",
+          "iPad Air 2 rotating case free shipping"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 2 360 Rotating Case"
+      },
+      {
+        "from": [
+          "FREE SHIP Amazon Kindle Fire",
+          "FREE SHIP Amazon kindle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FREE SHIP Amazon Kindle Fire"
+      },
+      {
+        "from": [
+          "Nook by Barnes and Noble",
+          "Nook by Barnes and noble"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nook by Barnes and Noble"
+      },
+      {
+        "from": [
+          "iPad mini 1 16 gb NEW NEVER Used",
+          "iPad mini 2 32 gb in perfect condition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini 1 16 gb NEW NEVER Used"
+      },
+      {
+        "from": [
+          "iPad mini 1 - 16gb like new",
+          "iPad mini 1 32gb LIKE NEW CELLULAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini 1 - 16gb like new"
+      },
+      {
+        "from": [
+          "SPECK Macbook Pro 13\" with RETINA case",
+          "SPECK Macbook Pro 13\" with Retina case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SPECK Macbook Pro 13\" with RETINA case"
+      },
+      {
+        "from": [
+          "iPad 4th Gen 16gb Buy Now, Ship Now!",
+          "iPod 6th gen 32 gb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 4th Gen 16gb Buy Now, Ship Now!"
+      },
+      {
+        "from": [
+          "RCA tablet with a keyboard case",
+          "Rca 7\" tablet with keyboard and case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RCA tablet with a keyboard case"
+      },
+      {
+        "from": [
+          "iPad 2 64GB, cellular data, LTE. White",
+          "iPad 2, 64GB,cellular unlocked"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad 2 64GB, cellular data, LTE. White"
+      },
+      {
+        "from": [
+          "Alcatel One Touch",
+          "Alcatel One Touch Pop 7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcatel One Touch"
+      },
+      {
+        "from": [
+          "Blue IPod 5",
+          "Blue iPod 5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blue IPod 5"
+      },
+      {
+        "from": [
+          "iPad Air 16 GB Factory Settings",
+          "iPad Air 32gb wifi & 4G AT&T"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 16 GB Factory Settings"
+      },
+      {
+        "from": [
+          "Snugg iPad Air 2 Bluetooth case",
+          "Snugg iPad air 2 Bluetooth Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snugg iPad Air 2 Bluetooth case"
+      },
+      {
+        "from": [
+          "Kindle E Reader 6 inch",
+          "Kindle E-Reader (Non Touch Screen)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle E Reader 6 inch"
+      },
+      {
+        "from": [
+          "IPod touch 5g",
+          "Ipod touch 4g"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPod touch 5g"
+      },
+      {
+        "from": [
+          "LG G Pad F",
+          "LG G pad F 7.0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LG G Pad F"
+      },
+      {
+        "from": [
+          "iHome Stylus Pen",
+          "iHome stylus + ballpoint pen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iHome Stylus Pen"
+      },
+      {
+        "from": [
+          "Apple iPad 16GB 3rd gen",
+          "Apple iPad 32 GB w/ Original Box 3rd Gen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Apple iPad 16GB 3rd gen"
+      },
+      {
+        "from": [
+          "16 GB iPod touch 5th generation",
+          "32GB iPod Touch 5th Generation!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16 GB iPod touch 5th generation"
+      },
+      {
+        "from": [
+          "iPad Air LifeProof NUUD Case",
+          "iPad Air Lifeproof fre Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air LifeProof NUUD Case"
+      },
+      {
+        "from": [
+          "32GB iPad",
+          "32GB iPad 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32GB iPad"
+      },
+      {
+        "from": [
+          "10inch Tablet Case(brand new)",
+          "7 inch tablet cases"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10inch Tablet Case(brand new)"
+      },
+      {
+        "from": [
+          "Nabi 2 kids tablet",
+          "Nabi kids tablet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nabi 2 kids tablet"
+      },
+      {
+        "from": [
+          "SPECK smartshell Macbook Air 13\" case",
+          "SPECK smartshell Macbook air 13\" case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SPECK smartshell Macbook Air 13\" case"
+      },
+      {
+        "from": [
+          "BRAND NEW Amazon Fire 7 in tablet black",
+          "Brand New Amazon Fire Tablet 8 GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BRAND NEW Amazon Fire 7 in tablet black"
+      },
+      {
+        "from": [
+          "Ipod Touch 3rd Generation",
+          "iPod Touch 3rd generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipod Touch 3rd Generation"
+      },
+      {
+        "from": [
+          "iPod Shuffle (20GB)",
+          "iPod Shuffle 2GB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPod Shuffle (20GB)"
+      },
+      {
+        "from": [
+          "Lilly Pulitzer iPad 4th generation case",
+          "Lilly Pulitzer iPad Case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lilly Pulitzer iPad 4th generation case"
+      },
+      {
+        "from": [
+          "Tablet Case",
+          "Tablet case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tablet Case"
+      },
+      {
+        "from": [
+          "WINDOWS Surface Rt 32 gbs",
+          "Windows Surface RT 8.1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WINDOWS Surface Rt 32 gbs"
+      },
+      {
+        "from": [
+          "iPad Air 1 Keyboard Case",
+          "iPad Air 2 w/ keyboard **LOWERED PRICE**"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad Air 1 Keyboard Case"
+      },
+      {
+        "from": [
+          "IPad smart cover",
+          "iPad smart case!! Sale!!"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad smart cover"
+      },
+      {
+        "from": [
+          "UNIDEN TABLET FOR",
+          "Uniden Tablet 7\" Screen NO CHARGER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UNIDEN TABLET FOR"
+      },
+      {
+        "from": [
+          "Galaxy Tablet 3",
+          "Galaxy tablet 4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Galaxy Tablet 3"
+      },
+      {
+        "from": [
+          "IPad 2 second gen digitizer black new",
+          "iPad 2 second gen digitizer white new"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad 2 second gen digitizer black new"
+      },
+      {
+        "from": [
+          "iPad mini 2 wifi + cellular 128GB AT&T",
+          "iPad mini 4 wifi+cellular"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini 2 wifi + cellular 128GB AT&T"
+      },
+      {
+        "from": [
+          "Nabi 2 charger",
+          "Nabi2 charger."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nabi 2 charger"
+      },
+      {
+        "from": [
+          "Kindle",
+          "kindle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kindle"
+      },
+      {
+        "from": [
+          "Mini iPad",
+          "Mini ipod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mini iPad"
+      },
+      {
+        "from": [
+          "IPod Classic 5th Generation 120 gb",
+          "iPod Classic 6th Generation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPod Classic 5th Generation 120 gb"
+      },
+      {
+        "from": [
+          "NEW I-PAD MINI 2",
+          "New iPad mini 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEW I-PAD MINI 2"
+      },
+      {
+        "from": [
+          "IPad Pro 10.5 inch & IPad mini",
+          "iPad Pro 9.7\"Inch Apple Silicon Case✨New"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IPad Pro 10.5 inch & IPad mini"
+      },
+      {
+        "from": [
+          "Nook color by barnes and Noble",
+          "nook color by barnes &noble"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nook color by barnes and Noble"
+      },
+      {
+        "from": [
+          "iPad mini Flower texture case mini 1/2/3",
+          "iPad mini flower texture case mini 1/2/3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iPad mini Flower texture case mini 1/2/3"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "brand_name",
+    "expression": "grel:if(value == null, \"Unbranded\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column brand_name using expression grel:if(value == null, \"Unbranded\", value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "price",
+    "expression": "grel:if(value.toNumber() > 100, 1, 0)",
+    "onError": "set-to-blank",
+    "newColumnName": "high_priced",
+    "columnInsertIndex": 11,
+    "description": "Create column high_priced at index 11 based on column price using expression grel:if(value.toNumber() > 100, 1, 0)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "item_description",
+    "expression": "grel:if(or(value.contains(\"discount\"), value.contains(\"offer\"), value.contains(\"sale\")), 1, 0)",
+    "onError": "set-to-blank",
+    "newColumnName": "has_offer",
+    "columnInsertIndex": 14,
+    "description": "Create column has_offer at index 14 based on column item_description using expression grel:if(or(value.contains(\"discount\"), value.contains(\"offer\"), value.contains(\"sale\")), 1, 0)"
+  }
+]
